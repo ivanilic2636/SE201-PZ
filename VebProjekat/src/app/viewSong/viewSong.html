@@ -1,0 +1,23 @@
+<div class="col-12 col-md-auto">
+
+
+
+
+
+
+
+
+
+<div *ngIf="data">
+
+<p>
+<iframe width="560" height="315" [attr.src]="sanitizer.bypassSecurityTrustResourceUrl(data.song_link)"></iframe></p>
+  <button type="button" data-toggle="modal" data-target="#myModal2" (click)="onAddSong(data.song_id)" class="btn btn-danger" data-dismiss="modal">Add song</button>
+
+
+
+
+
+
+</div>
+</div>

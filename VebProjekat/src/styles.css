@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	background:	#00bfff;
+  font-family: cursive;
+    font-size: 18px;
+}
+.btn-warning{
+  color: black;
+}
+.col-12{
+
+    margin-left: 30%;
+    margin-top: 10%;
+
+}

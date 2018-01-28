@@ -1,0 +1,34 @@
+<form role="form" [formGroup]="addSongForm">
+<div class="form-group">
+<label for="ime">Song name:</label>
+<input type="text" class="form-control" formControlName='song_name'>
+</div>
+<div class="form-group">
+<label for="prezime">Song runtime:</label>
+<input type="text" class="form-control" formControlName='song_runtime'>
+</div>
+<div class="form-group">
+<label for="prezime">Song link:</label>
+<input type="text" class="form-control" formControlName='song_link'>
+</div>
+
+<div class="form-group">
+<label for="song_band">Preformer:</label>
+<select formControlName='song_band' class="form-control" ng-selected="Yes" >
+<option value="" selected>Select preformer</option>
+<option *ngFor="let band1 of band" [value]="band1.band_id">{{band1.band_name}}</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label for="song_genere">Genere:</label>
+<select formControlName='song_genere' class="form-control" ng-selected="Yes" >
+<option value="" selected>Select genere</option>
+<option *ngFor="let genere1 of genere" [value]="genere1.genere_id">{{genere1.genere_name}}</option>
+</select>
+
+</div>
+
+<button (click)="onAddSong()" class="btn btn-default">Add song</button>
+</form>

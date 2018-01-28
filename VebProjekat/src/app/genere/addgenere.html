@@ -1,0 +1,14 @@
+<form role="form" [formGroup]="addGenereTypeForm">
+<div class="form-group">
+<label for="genere_name">Genere name:</label>
+<input type="text" class="form-control" formControlName='genere_name'>
+</div>
+<button (click)="onAddGenere()" class="btn btn-default">Add genere</button>
+</form>
+<div class="col-lg-12">
+<br/>Generes<br/> <br/>
+<div *ngFor="let genere of data1">
+Genere name: {{genere.genere_name}}
+<br/>
+</div>
+</div>

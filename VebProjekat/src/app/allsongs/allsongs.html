@@ -1,0 +1,32 @@
+<div class="col-lg-12">
+  <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" name="name" [(ngModel)]="name"><br/>
+          </div>
+<table class="table-stripped table">
+
+<thead>
+  <tr>
+<th>Song name</th>
+<th>Song runtime</th>
+
+<th>Performer</th>
+<th>Genere</th>
+
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let songs of data | SearchPipe :name">
+<td>{{songs.song_name}}</td>
+<td>{{songs.song_runtime}}</td>
+
+<td>{{songs.band}}</td>
+<td>{{songs.genere}}</td>
+
+<td>  <button type="button" data-toggle="modal" data-target="#myModal2" (click)="viewSong(songs.song_id)" class="btn btn-warning" data-dismiss="modal">View song</button></td>
+
+</tr>
+</tbody>
+</table>
+
+
+</div>

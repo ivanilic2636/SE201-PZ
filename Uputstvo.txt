@@ -1,0 +1,7 @@
+Baza podataka angular.
+Username Ivan(Username se razlikuje ali je pasvord svima isti)
+Password 123
+php fajl treba u htdocsu da se nazove VebSistemiProjekat
+node_moduli nisu poslati zbog velicine projekta
+npm install
+npm start

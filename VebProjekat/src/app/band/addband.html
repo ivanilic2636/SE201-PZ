@@ -1,0 +1,16 @@
+<form role="form" [formGroup]="addBandTypeForm">
+<div class="form-group">
+<label for="band_name">Band name:</label>
+<input type="text" class="form-control" formControlName='band_name'>
+</div>
+<button (click)="onAddBand()" class="btn btn-default">Add band</button>
+</form>
+
+  <div class="col-lg-12">
+  <br/>Bands<br/> <br/>
+  <div *ngFor="let band of data1">
+  Band name: {{band.band_name}}
+  <br/>
+
+  </div>
+  </div>

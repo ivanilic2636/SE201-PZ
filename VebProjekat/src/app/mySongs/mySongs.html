@@ -1,0 +1,22 @@
+<div class="col-lg-12">
+
+<table>
+
+
+
+
+
+
+
+<tbody>
+<tr *ngFor="let data of data">
+
+
+<td>  <iframe width="560" height="315" [attr.src]="sanitizer.bypassSecurityTrustResourceUrl(data.song_link)"></iframe></td>
+<td><button class="btn btn-danger" (click)="deleteSong($event,data.song_id)">Delete</button></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
